@@ -61,16 +61,6 @@ class SingleList {
         temp.next = next
         return this.list
     }
-    // 找到某个结点的前一个结点
-    findPrior(index) {
-        let temp = this.boolean ? this.list.next : this.list
-        let i = 0
-        while (temp && i < index-1) {
-            temp = temp.next
-            i++
-        }
-        return i > 0 ? temp : undefined
-    }
     // 根据val查找结点,如果有多个相同的val值，只会返回第一个
     // 如果找到了对应结点，则返回对应结点；如果没有找到则返回 undefined
     vfind(val) {
