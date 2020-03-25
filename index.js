@@ -41,6 +41,7 @@ class SingleList {
         let node = new ListNode(val)
         let current = this.kfind(index)
         let i = 0
+        // temp 为前驱结点指针
         while (temp && i < index-1) {
             temp = temp.next
             i++
@@ -54,6 +55,7 @@ class SingleList {
         let temp = this.boolean ? this.list.next : this.list
         let next = this.kfind(index).next
         let i = 0
+        // temp 为前驱结点指针
         while (temp && i < index-1) {
             temp = temp.next
             i++
